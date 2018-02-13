@@ -4,9 +4,8 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket rdpacheco-lambda-tutorial --output-template-file NewSamTemplate.yaml
-      - cat NewSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket rdpacheco-lambda-tutorial --output-template-file finalSamTemplate.yaml
 artifacts:
   type: zip
   files:
-    - samTemplate.yaml
+    - finalSamTemplate.yaml
