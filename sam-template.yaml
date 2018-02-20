@@ -9,7 +9,7 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: ./
-      AutoPublishAlias: production
+      AutoPublishAlias: develop
       Events:
         MyTimeApi:
           Type: Api
