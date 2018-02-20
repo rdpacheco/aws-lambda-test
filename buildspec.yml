@@ -5,7 +5,6 @@ phases:
     commands:
       - npm install time
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket rdpacheco-aws-cf-artifacts --output-template-file finalSamTemplate.yaml
-      - "echo $?"
 artifacts:
   type: zip
   files:
