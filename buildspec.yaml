@@ -5,8 +5,8 @@ phases:
     commands:
       - npm install time
       - "aws cloudformation package --template-file sam-template.yaml --s3-bucket rdpacheco-aws-cf-artifacts \
-        --output-template-file packaged-template.yaml"
+        --output-template-file output-template.yaml"
 artifacts:
   type: zip
   files:
-    - packaged-template.yaml
+    - output-template.yaml
