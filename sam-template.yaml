@@ -10,7 +10,7 @@ Resources:
       Runtime: nodejs6.10
       CodeUri: ./
       AutoPublishAlias: develop
-      Role: arn:aws:iam::458627281908:role/totem-config-service-environment-LambdaRole-A3AE3JCGISFH
+      Role: "arn:aws:iam::458627281908:role/totem-config-service-environment-LambdaRole-A3AE3JCGISFH"
       Events:
         MyTimeApi:
           Type: Api
