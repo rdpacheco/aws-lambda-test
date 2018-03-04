@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install time
-      - "aws cloudformation package --template-file sam-template.yaml --s3-bucket rdpacheco-totem-global-totem-bucket2 \
+      - "aws cloudformation package --template-file sam-template.yaml --s3-bucket totem-global-totembucket-4gpfikdbchtq \
         --s3-prefix codebuild-artifacts --output-template-file output-template.yaml"
 artifacts:
   type: zip
